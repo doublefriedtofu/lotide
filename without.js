@@ -21,13 +21,13 @@ const assertArrayEqual = function(firstArray, secondArray) {
 const without = function(firstArray, itemsToRemoveArray) {
   const result = []; // empty array
   // go through each number in the first array
-  for (let i = 0; i < firstArray.length; i++) {  
+  for (let i = 0; i < firstArray.length; i++) {
     // go through the second Array
-      // compare the number in the second array to the first one
-      if (!itemsToRemoveArray.includes(firstArray[i])) {
-        result.push(firstArray[i]);
-      }
+    // compare the number in the second array to the first one
+    if (!itemsToRemoveArray.includes(firstArray[i])) {
+      result.push(firstArray[i]);
     }
+  }
   return result;
 };
 
