@@ -1,7 +1,11 @@
-const assertEqual = require('../assertEqual');
+const assert = require('chai').assert;
 
-// Test Code
-assertEqual("vitamin D", "vitamin D");
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
-assertEqual(3, 5);
+describe("#assertEqual", () => {
+  it("returns true for vitamin D, vitamin D", () => {
+    assert.strictEqual("vitamin D", "vitamin D");
+  });
+
+  it("returns true for 5, 5", () => {
+    assert.strictEqual(5, 5);
+  });
+});
