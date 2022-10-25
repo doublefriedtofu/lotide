@@ -1,10 +1,10 @@
-const eqArrays = require('./eqArrays')
+const eqArrays = require('./eqArrays');
 
 const assertArrayEqual = function(firstArray, secondArray) {
   if (eqArrays(firstArray, secondArray)) {
-    return `✅✅✅ Assertion Passed: ${firstArray} === ${secondArray}`;
+    console.log(`✅✅✅ Assertion Passed: ${firstArray} === ${secondArray}`);
   } else {
-    return `🔴🔴🔴 Assertion Failed: ${firstArray} !== ${secondArray}`;
+    console.log(`🔴🔴🔴 Assertion Failed: ${firstArray} !== ${secondArray}`);
   }
 };
 
